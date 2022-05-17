@@ -6,8 +6,8 @@ import fetchData from './modules/fetch-data.js';
 const urlApi = 'https://api.tvmaze.com/shows/1/episodes';
 
 const apiData = fetchData(urlApi);
-console.log(apiData);
-newGame.then(
+
+apiData.then(
   (value) => {
     const arrDataFromApi = value;
 
