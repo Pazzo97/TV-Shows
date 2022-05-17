@@ -3,6 +3,7 @@ import './style.css';
 import _ from 'lodash';
 
 import moviesList from './modules/moviesList.js';
+import fetchData from './modules/fetch-data.js';
 
 const moviesSection = document.getElementById('movies-grids');
 moviesSection.innerHTML = moviesList.map(((movie) => `
@@ -16,8 +17,6 @@ moviesSection.innerHTML = moviesList.map(((movie) => `
 <button type="button">Comments</button>
 </article>
 `)).join('');
-
-import fetchData from './modules/fetch-data.js';
 
 const urlApi = 'https://api.tvmaze.com/shows/1/episodes';
 
