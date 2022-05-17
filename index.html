@@ -10,25 +10,107 @@
 
 <body>
 
-  <main>
+  <header class="header">
 
-    <header class="header">
+    <img class="logo" src="https://picsum.photos/200/300?random=0" alt="logo">
 
-      <img class="logo" src="https://picsum.photos/200/300?random=1" alt="logo">
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-link"><a href="#">Episodes</a></li>
+        <li class="nav-link"><a href="#">About</a></li>
+        <li class="nav-link"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-link"><a href="#">Episodes</a></li>
-          <li class="nav-link"><a href="#">About</a></li>
-          <li class="nav-link"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+  </header>
 
-    </header>
+  <main class="grid">
 
-    
+    <article>
+      <img class="episode-picture" src="https://picsum.photos/200/300?random=1" alt="Sample photo">
+      <div class="text">
+        <h4>Space1</h4>
+        <img class="like-heart" src="https://img.icons8.com/ios/50/000000/like--v1.png" alt="heart">
+      </div>
+      <p>5 likes</p>
+      <button type="button">Comments</button>
+    </article>
+
+    <article>
+      <img class="episode-picture" src="https://picsum.photos/200/300?random=2" alt="Sample photo">
+      <div class="text">
+        <h4>Space2</h4>
+        <img class="like-heart" src="https://img.icons8.com/ios/50/000000/like--v1.png" alt="heart">
+      </div>
+      <p>5 likes</p>
+      <button type="button">Comments</button>
+    </article>
+
+    <article>
+      <img class="episode-picture" src="https://picsum.photos/200/300?random=3" alt="Sample photo">
+      <div class="text">
+        <h4>Space3</h4>
+        <img class="like-heart" src="https://img.icons8.com/ios/50/000000/like--v1.png" alt="heart">
+      </div>
+      <p>5 likes</p>
+      <button type="button">Comments</button>
+    </article>
+
+    <article>
+      <img class="episode-picture" src="https://picsum.photos/200/300?random=4" alt="Sample photo">
+      <div class="text">
+        <h4>Space4</h4>
+        <img class="like-heart" src="https://img.icons8.com/ios/50/000000/like--v1.png" alt="heart">
+      </div>
+      <p>5 likes</p>
+      <button type="button">Comments</button>
+
+    </article>
+
+    <article>
+      <img class="episode-picture" src="https://picsum.photos/200/300?random=5" alt="Sample photo">
+      <div class="text">
+        <h4>Space5</h4>
+        <img class="like-heart" src="https://img.icons8.com/ios/50/000000/like--v1.png" alt="heart">
+      </div>
+      <p>5 likes</p>
+      <button type="button">Comments</button>
+    </article>
+
+    <article>
+      <img class="episode-picture" src="https://picsum.photos/200/300?random=6" alt="Sample photo">
+      <div class="text">
+        <h4>Space6</h4>
+        <img class="like-heart" src="https://img.icons8.com/ios/50/000000/like--v1.png" alt="heart">
+      </div>
+      <p>5 likes</p>
+      <button type="button">Comments</button>
+    </article>
 
   </main>
+
+  <div class="comment-popup" id="comment-popup">
+    <div class="item-details">
+      <div class="item-header">
+        <div class="item-body">
+          <span id="item-image"><img src="https://static.tvmaze.com/uploads/images/original_untouched/1/4388.jpg" alt="Item picture"></span>
+          <h2 id="item-name">Name</h2>
+          <div class="item-body-details">
+            <div class="item-body-first">
+              <p><b>Season:</b> <span id="item-season">1</span></p>
+              <p><b>Episode:</b> <span id="item-episode">1</span></p>
+            </div>
+            <div class="item-body-second">
+              <p><b>Runtime:</b> <span id="item-runtime">60</span></p>
+              <p><b>Rating:</b> <span id="item-rating">7.7</span></p>
+            </div>
+          </div>
+        </div>
+        <a href="#" id="close-comment-popup">&times;</a>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <p>Created by Microverse under CC License</p>
   </footer>
