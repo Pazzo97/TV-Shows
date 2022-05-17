@@ -2,21 +2,8 @@ import './style.css';
 // eslint-disable-next-line no-unused-vars
 import _ from 'lodash';
 
-import moviesList from './modules/moviesList.js';
+// import moviesList from './modules/moviesList.js';
 import fetchData from './modules/fetch-data.js';
-
-const moviesSection = document.getElementById('movies-grids');
-moviesSection.innerHTML = moviesList.map(((movie) => `
-<article>
-<img class="episode-picture" src="${movie.image.poster}" alt="${movie.title}">
-<div class="text">
-  <h4>${movie.title}</h4>
-  <img class="like-heart" src="https://img.icons8.com/fluency/48/000000/like.png" alt="heart">
-</div>
-<p>5 likes</p>
-<button type="button">Comments</button>
-</article>
-`)).join('');
 
 const urlApi = 'https://api.tvmaze.com/shows/1/episodes';
 
@@ -25,6 +12,19 @@ const apiData = fetchData(urlApi);
 apiData.then(
   (value) => {
     const arrDataFromApi = value;
+
+    const moviesSection = document.getElementById('movies-grids');
+    moviesSection.innerHTML = arrDataFromApi.map(((movie) => `
+      <article>
+        <img class="episode-picture" src="${movie.image.medium}" alt="${movie.name}">
+        <div class="text">
+        <h4>${movie.name}</h4>
+        <img class="like-heart" src="https://img.icons8.com/fluency/48/000000/like.png" alt="heart">
+        </div>
+        <p>5 likes</p>
+        <button class="comment" type="button">Comments</button>
+      </article>
+          `)).join('');
 
     const commentPopup = document.querySelectorAll('.comment');
     commentPopup.forEach((button, index) => {
@@ -42,7 +42,7 @@ apiData.then(
         itemSeason.innerHTML = arrDataFromApi[index].season;
         itemEpisode.innerHTML = arrDataFromApi[index].number;
         itemRuntime.innerHTML = arrDataFromApi[index].runtime;
-        itemRating.innerHTML = arrDataFromApi[index].ratting.average;
+        itemRating.innerHTML = arrDataFromApi[index].rating.average;
       });
     });
   },
