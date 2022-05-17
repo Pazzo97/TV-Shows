@@ -1,10 +1,30 @@
 body {
-  font-size: 18px;
+  font-size: 20px;
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  color: skyblue;
+.header {
+  display: flex;
+  padding: 30px 50px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-list a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #000;
 }
