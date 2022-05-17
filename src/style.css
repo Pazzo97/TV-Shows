@@ -33,6 +33,7 @@ body {
 
 footer {
   border: 2px solid #000;
+  margin: 15px auto;
 }
 
 footer p {
@@ -93,4 +94,56 @@ footer p {
 
 .item-body-second {
   flex: 1;
+
+  .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: start;
+  margin: 6% 100px;
 }
+
+.grid > article {
+  max-width: 50%;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 50px;
+  gap: 10px;
+}
+
+article button {
+  padding: 5px;
+  width: 100%;
+  border: 2px solid #000;
+  box-shadow: 4px 4px #000;
+  cursor: pointer;
+  background: none;
+  margin: 10px auto;
+}
+
+.text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+.like-heart {
+  height: 30px;
+}
+
+.episode-picture {
+  width: 100%;
+  height: 200px;
+}
+
+article p {
+  float: right;
+  margin: auto;
+  }
