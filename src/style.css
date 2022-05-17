@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 body {
   font-size: 20px;
   font-family: Helvetica, Arial, sans-serif;
@@ -35,4 +37,18 @@ footer {
 
 footer p {
   padding-left: 15px;
+}
+
+.item-header {
+  display: flex;
+}
+
+.item-pic-name img {
+  width: 500px;
+  height: 290px;
+}
+
+#close-comment-popup {
+  font-size: 20px;
+  font-weight: bold;
 }

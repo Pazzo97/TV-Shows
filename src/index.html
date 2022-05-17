@@ -10,25 +10,42 @@
 
 <body>
 
-  <main>
+  <header class="header">
 
-    <header class="header">
+    <img class="logo" src="https://picsum.photos/200/300?random=1" alt="logo">
 
-      <img class="logo" src="https://picsum.photos/200/300?random=1" alt="logo">
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-link"><a href="#">Episodes</a></li>
+        <li class="nav-link"><a href="#">About</a></li>
+        <li class="nav-link"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-link"><a href="#">Episodes</a></li>
-          <li class="nav-link"><a href="#">About</a></li>
-          <li class="nav-link"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+  </header>
 
-    </header>
+  <div class="comment-popup set" id="comment-popup">
+    <div class="item-details">
+      <div class="item-header">
+        <div class="item-pic-name">
+          <img src="https://rolandfbk.github.io/portfolio/img/Rectangle_21.svg" alt="Item picture">
+          <h2>Name</h2>
+        </div>
+        <span id="close-comment-popup">&times;</span>
+      </div>
+      <div class="item-body">
+        <div class="item-body-first">
+          <p>Season: 1</p>
+          <p>Episode: 1</p>
+        </div>
+        <div class="item-body-second">
+          <p>Runtime: 60</p>
+          <p>Rating: 7.7</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    
-
-  </main>
   <footer>
     <p>Created by Microverse under CC License</p>
   </footer>
