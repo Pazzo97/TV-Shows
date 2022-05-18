@@ -4,6 +4,10 @@ import _ from 'lodash';
 
 // import moviesList from './modules/moviesList.js';
 import fetchData from './modules/fetch-data.js';
+import videoDetails from './modules/video-details.js';
+import addComment from './modules/add-comment.js';
+import loadComment from './modules/load-comment.js';
+import totalComment from './modules/total-comment.js';
 
 const urlApi = 'https://api.tvmaze.com/shows/1/episodes';
 
@@ -26,24 +30,59 @@ apiData.then(
       </article>
           `)).join('');
 
+    let itemID;
     const commentPopup = document.querySelectorAll('.comment');
     commentPopup.forEach((button, index) => {
       button.addEventListener('click', () => {
         document.getElementById('comment-popup').style.display = 'block';
-        const itemImage = document.getElementById('item-image');
-        const itemName = document.getElementById('item-name');
-        const itemSeason = document.getElementById('item-season');
-        const itemEpisode = document.getElementById('item-episode');
-        const itemRuntime = document.getElementById('item-runtime');
-        const itemRating = document.getElementById('item-rating');
-
-        itemImage.innerHTML = `<img src="${arrDataFromApi[index].image.original}" alt="Item picture">`;
-        itemName.innerHTML = arrDataFromApi[index].name;
-        itemSeason.innerHTML = arrDataFromApi[index].season;
-        itemEpisode.innerHTML = arrDataFromApi[index].number;
-        itemRuntime.innerHTML = arrDataFromApi[index].runtime;
-        itemRating.innerHTML = arrDataFromApi[index].rating.average;
+        document.body.classList.add('no-scroll');
+        videoDetails(arrDataFromApi, index);
+        itemID = arrDataFromApi[index].id;
+        loadComment(itemID);
+        const totalComments = totalComment(itemID);
+        totalComments.then(
+          (value) => {
+            if (typeof value === 'undefined') {
+              document.getElementById('comment-total').innerHTML = '0';
+            } else {
+              document.getElementById('comment-total').innerHTML = value;
+            }
+          },
+        );
       });
+    });
+
+    const addForm = document.getElementById('addForm');
+    addForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const userName = document.getElementById('user-name').value;
+      const userComment = document.getElementById('user-comment').value;
+      const addCommentResponse = addComment(itemID, userName, userComment);
+
+      addCommentResponse.then(
+        (value) => {
+          if (value === 'Created') {
+            loadComment(itemID);
+            const totalComments = totalComment(itemID);
+            totalComments.then(
+              (value) => {
+                document.getElementById('comment-total').innerHTML = value;
+              },
+            );
+          } else {
+            alert('Comment post fail! Please try again...');
+          }
+
+          addForm.reset();
+        },
+      );
     });
   },
 );
+
+const closeComment = document.getElementById('close-comment-popup');
+closeComment.addEventListener('click', () => {
+  document.getElementById('comment-popup').style.display = 'none';
+  document.body.classList.remove('no-scroll');
+});

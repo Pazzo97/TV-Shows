@@ -27,7 +27,7 @@
   <main>
 
     <section class="grid" id="movies-grids">
-   
+
     </section>
 
   <section>
@@ -35,17 +35,30 @@
       <div class="item-details">
         <div class="item-header">
           <div class="item-body">
-            <span id="item-image"></span>
-            <h2 id="item-name"></h2>
+            <span id="item-image"><img src="https://static.tvmaze.com/uploads/images/original_untouched/1/4388.jpg" alt=""/></span>
+            <h2 id="item-name">Name</h2>
             <div class="item-body-details">
               <div class="item-body-first">
-                <p><b>Season:</b> <span id="item-season"></span></p>
-                <p><b>Episode:</b> <span id="item-episode"></span></p>
+                <p><b>Season:</b> <span id="item-season">1</span></p>
+                <p><b>Episode:</b> <span id="item-episode">1</span></p>
               </div>
               <div class="item-body-second">
-                <p><b>Runtime:</b> <span id="item-runtime"></span></p>
-                <p><b>Rating:</b> <span id="item-rating"></span></p>
+                <p><b>Runtime:</b> <span id="item-runtime">60</span></p>
+                <p><b>Rating:</b> <span id="item-rating">7.7</span></p>
               </div>
+            </div>
+
+            <div class="comment-body">
+              <h3 class="comment-title">Comments (<span id="comment-total"></span>)</h3>
+              <div class="comment-list" id="comment-list">
+                
+              </div>
+              <h3 class="comment-title">Add a comment</h3>
+              <form id="addForm" method="post">
+                <input type="text" id="user-name" placeholder="Your name" required>
+                <input type="text" id="user-comment" placeholder="Your insights" required>
+                <button id="addButton" type="submit">Comment</button>
+              </form>
             </div>
           </div>
           <a href="#" id="close-comment-popup">&times;</a>
