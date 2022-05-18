@@ -17,7 +17,6 @@ const apiData = fetchData(urlApi);
 apiData.then(
   (value) => {
     const arrDataFromApi = value;
-    console.log(arrDataFromApi);
 
     const moviesSection = document.getElementById('movies-grids');
     moviesSection.innerHTML = arrDataFromApi.map(((movie) => `
@@ -25,7 +24,7 @@ apiData.then(
         <img class="episode-picture" src="${movie.image.medium}" alt="${movie.name}">
         <div class="text">
         <h4>${movie.name}</h4>
-        <img class="like-heart" src="https://img.icons8.com/fluency/48/000000/like.png" alt="heart">
+        <img class="red-heart" src="https://img.icons8.com/fluency/48/000000/like.png" alt="heart">
         </div>
         <p><span class="like-heart"></span> likes</p>
         <button class="comment" type="button">Comments</button>
@@ -37,18 +36,14 @@ apiData.then(
     const likesPromise = loadLikes();
     likesPromise.then((value) => {
       const arrLikes = value;
-      console.log(arrLikes);
       const arrIds = [];
 
       arrLikes.forEach((like) => {
         arrIds.push(like.item_id);
       });
-      console.log(arrIds);
       itemLikes.forEach((item, index) => {
         const likeId1 = arrDataFromApi[index].id;
         const likeId = likeId1.toString();
-        console.log(typeof likeId);
-        console.log(arrIds.includes(likeId));
         if (arrIds.includes(likeId)) {
           let count = 0;
           let found = false;
@@ -59,8 +54,6 @@ apiData.then(
             }
             count += 1;
           }
-          console.log(typeof likeId);
-          console.log(typeof arrLikes[0].item_id);
         } else {
           item.innerHTML = '0';
         }
