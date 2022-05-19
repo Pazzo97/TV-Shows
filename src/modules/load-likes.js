@@ -1,4 +1,4 @@
-async function loadLikes() {
+const loadLikes = async () => {
   const requestOptions = {
     method: 'GET',
     redirect: 'follow',
@@ -11,6 +11,6 @@ async function loadLikes() {
   const likesObj = JSON.parse(likes);
 
   return likesObj;
-}
+};
 
 export default loadLikes;
