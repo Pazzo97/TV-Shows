@@ -9,6 +9,7 @@ import addComment from './modules/add-comment.js';
 import loadComment from './modules/load-comment.js';
 import totalComment from './modules/total-comment.js';
 import loadLikes from './modules/load-likes.js';
+import addLikes from './modules/add-likes.js';
 
 const urlApi = 'https://api.tvmaze.com/shows/1/episodes';
 
@@ -57,6 +58,18 @@ apiData.then(
         } else {
           item.innerHTML = '0';
         }
+      });
+    });
+
+    const redHeart = document.querySelectorAll('.red-heart');
+    redHeart.forEach((heart, index) => {
+      heart.addEventListener('click', () => {
+        const likeId1 = arrDataFromApi[index].id;
+        const likeId = likeId1.toString();
+        addLikes(likeId);
+        const likes = heart.parentElement.parentElement.querySelector('.like-heart');
+        const likesCount = Number(likes.innerHTML);
+        likes.innerHTML = likesCount + 1;
       });
     });
 
