@@ -16,12 +16,11 @@
 
 ## Live Demo
 
-- The project is deployed with [GitHub pages](https://pazzo97.github.io/TV-Shows/).
+- The project is deployed with [GitHub pages](https://pazzo97.github.io/TV-Shows/dist).
 
 ## Video Presentation
 
-[Click Here]()
-
+[Click Here](https://drive.google.com/file/d/1gZMMHvFi1cQIlLDlHVTyWYk_W8pzoZRx/view?usp=sharing)
 
 
 ## Getting Started
