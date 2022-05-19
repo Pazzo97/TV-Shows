@@ -10,17 +10,30 @@
 - Webpack
 - ES6
 
-## Link to online version
+## Screenshots
 
-- Copy these to your browser
-    ```sh
-    https://pazzo97.github.io/ToDo-List-App/
+<img src='screenshots/desktop.png'>
+
+## Live Demo
+
+- The project is deployed with [GitHub pages](https://pazzo97.github.io/TV-Shows/).
+
+## Video Presentation
+
+[Click Here]()
+
+
 
 ## Getting Started
 
 To get a copyof this project you can follow these simple steps.
 
 - run npm install
+
+## Prerequisites
+- browser (e.g. Google Chrome)
+- text editor (e.g. VSCode)
+- terminal/CLI
 
 ### Installation
 
@@ -81,8 +94,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- thanks to Traversy media whose tutorials has been helpfull
-- thanks to w3schools for the html and css
+- [TvMazeAPI](https://api.tvmaze.com/shows/1/episodes - for displaying the movies episodes
+- [Involvement API](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270). - for displaying the likes and comments
 
 
 ## 📝 License
