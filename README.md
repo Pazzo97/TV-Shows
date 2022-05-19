@@ -16,12 +16,11 @@
 
 ## Live Demo
 
-- The project is deployed with [GitHub pages](https://pazzo97.github.io/TV-Shows/).
+- The project is deployed with [GitHub pages](https://pazzo97.github.io/TV-Shows/dist).
 
 ## Video Presentation
 
-[Click Here]()
-
+[Click Here](https://drive.google.com/file/d/1gZMMHvFi1cQIlLDlHVTyWYk_W8pzoZRx/view?usp=sharing)
 
 
 ## Getting Started
@@ -94,7 +93,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [TvMazeAPI](https://api.tvmaze.com/shows/1/episodes - for displaying the movies episodes
+- [TvMazeAPI](https://api.tvmaze.com/shows/1/episodes) - for displaying the movies episodes
 - [Involvement API](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270). - for displaying the likes and comments
 
 
