@@ -77,7 +77,8 @@ apiData.then(
     const commentPopup = document.querySelectorAll('.comment');
     commentPopup.forEach((button, index) => {
       button.addEventListener('click', () => {
-        document.getElementById('comment-popup').style.display = 'block';
+        document.getElementById('comment-popup').style.visibility = 'visible';
+        document.getElementById('comment-popup').style.opacity = '1';
         document.body.classList.add('no-scroll');
         videoDetails(arrDataFromApi, index);
         itemID = arrDataFromApi[index].id;
@@ -126,6 +127,7 @@ apiData.then(
 
 const closeComment = document.getElementById('close-comment-popup');
 closeComment.addEventListener('click', () => {
-  document.getElementById('comment-popup').style.display = 'none';
+  document.getElementById('comment-popup').style.visibility = 'hidden';
+  document.getElementById('comment-popup').style.opacity = '0';
   document.body.classList.remove('no-scroll');
 });

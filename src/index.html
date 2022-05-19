@@ -51,12 +51,12 @@
             <div class="comment-body">
               <h3 class="comment-title">Comments (<span id="comment-total"></span>)</h3>
               <div class="comment-list" id="comment-list">
-                
+
               </div>
               <h3 class="comment-title">Add a comment</h3>
               <form id="addForm" method="post">
                 <input type="text" id="user-name" placeholder="Your name" required>
-                <input type="text" id="user-comment" placeholder="Your insights" required>
+                <textarea id="user-comment" placeholder="Your insights" maxlength="500" required></textarea>
                 <button id="addButton" type="submit">Comment</button>
               </form>
             </div>
