@@ -12,7 +12,7 @@
 
 ## Screenshots
 
-<img src='screenshots/desktop.png'>
+<img src='src/screenshots/desktop.png'>
 
 ## Live Demo
 
