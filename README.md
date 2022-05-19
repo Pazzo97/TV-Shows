@@ -1,6 +1,7 @@
-# Episode list
+# Under The Dome TV Series - Episode list
 
-> This project is about an app that shwows the episodes of a given and their descriptions.
+> This project is about an app that displays the total episodes of Under The Dome TV series. All the episodes items comes from an free api and the likes and comments are performed with the use of another free api. It allows users to post comments and likes, and displays the total number of comments and likes.
+
 ## Built With:
 
 - Html5
@@ -15,7 +16,6 @@
     ```sh
     https://pazzo97.github.io/ToDo-List-App/
 
-
 ## Getting Started
 
 To get a copyof this project you can follow these simple steps.
@@ -26,17 +26,16 @@ To get a copyof this project you can follow these simple steps.
 
 - Copy these
     ```sh
-  git clone https://github.com/Pazzo97/ToDo-List-App.git
-   
+  git clone https://github.com/Pazzo97/TV-Shows.git
+
 - then
     ```sh
-  cd ToDo-List-App
+  cd TV-Shows
 
 - open with vs code and run with live server.
 - Install NPM packages
    ```sh
   npm install
-
 
 ### Testing
 
@@ -74,7 +73,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-Feel free to check the [issues page](https://github.com/Pazzo97/ToDo-List-App/issues).
+Feel free to check the [issues page](https://github.com/Pazzo97/TV-Shows/issues).
 
 ## Show your support
 
