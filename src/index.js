@@ -10,8 +10,16 @@ import loadComment from './modules/load-comment.js';
 import totalComment from './modules/total-comment.js';
 import loadLikes from './modules/load-likes.js';
 import addLikes from './modules/add-likes.js';
+import episodeCounter from './modules/episode-counter.js';
 
 const urlApi = 'https://api.tvmaze.com/shows/1/episodes';
+const totalEpisodes = episodeCounter(urlApi);
+totalEpisodes.then(
+  (total) => {
+    const episodes = document.getElementById('episodes');
+    episodes.innerHTML = `${total}`;
+  },
+);
 
 const apiData = fetchData(urlApi);
 
