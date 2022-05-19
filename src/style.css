@@ -24,6 +24,11 @@ body {
   font-weight: 600;
 }
 
+.nav-list li:first-child {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
 .logo {
   height: 60px;
   width: 60px;
