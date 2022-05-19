@@ -1,6 +1,7 @@
-# Episode list
+# Under The Dome TV Series - Episode list
 
-> This project is about an app that shwows the episodes of a given and their descriptions.
+> This project is about an app that displays the total episodes of Under The Dome TV series. All the episodes items comes from an free api and the likes and comments are performed with the use of another free api. It allows users to post comments and likes, and displays the total number of comments and likes.
+
 ## Built With:
 
 - Html5
@@ -9,11 +10,18 @@
 - Webpack
 - ES6
 
-## Link to online version
+## Screenshots
 
-- Copy these to your browser
-    ```sh
-    https://pazzo97.github.io/ToDo-List-App/
+<img src='screenshots/desktop.png'>
+
+## Live Demo
+
+- The project is deployed with [GitHub pages](https://pazzo97.github.io/TV-Shows/).
+
+## Video Presentation
+
+[Click Here]()
+
 
 
 ## Getting Started
@@ -22,21 +30,25 @@ To get a copyof this project you can follow these simple steps.
 
 - run npm install
 
+## Prerequisites
+- browser (e.g. Google Chrome)
+- text editor (e.g. VSCode)
+- terminal/CLI
+
 ### Installation
 
 - Copy these
     ```sh
-  git clone https://github.com/Pazzo97/ToDo-List-App.git
-   
+  git clone https://github.com/Pazzo97/TV-Shows.git
+
 - then
     ```sh
-  cd ToDo-List-App
+  cd TV-Shows
 
 - open with vs code and run with live server.
 - Install NPM packages
    ```sh
   npm install
-
 
 ### Testing
 
@@ -74,7 +86,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-Feel free to check the [issues page](https://github.com/Pazzo97/ToDo-List-App/issues).
+Feel free to check the [issues page](https://github.com/Pazzo97/TV-Shows/issues).
 
 ## Show your support
 
@@ -82,8 +94,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- thanks to Traversy media whose tutorials has been helpfull
-- thanks to w3schools for the html and css
+- [TvMazeAPI](https://api.tvmaze.com/shows/1/episodes - for displaying the movies episodes
+- [Involvement API](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270). - for displaying the likes and comments
 
 
 ## 📝 License
