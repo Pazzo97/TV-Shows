@@ -93,7 +93,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [TvMazeAPI](https://api.tvmaze.com/shows/1/episodes - for displaying the movies episodes
+- [TvMazeAPI](https://api.tvmaze.com/shows/1/episodes) - for displaying the movies episodes
 - [Involvement API](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270). - for displaying the likes and comments
 
 
