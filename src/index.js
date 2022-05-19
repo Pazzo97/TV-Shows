@@ -1,8 +1,4 @@
 import './style.css';
-// eslint-disable-next-line no-unused-vars
-import _ from 'lodash';
-
-// import moviesList from './modules/moviesList.js';
 import fetchData from './modules/fetch-data.js';
 import videoDetails from './modules/video-details.js';
 import addComment from './modules/add-comment.js';
