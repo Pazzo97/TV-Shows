@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episode List</title>
+<script defer src="main.js"></script></head>
+
+<body>
+
+  <header class="header">
+
+    <img class="logo" src="https://picsum.photos/200/300?random=0" alt="logo">
+
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-link"><a href="#">Under The Dom Season1 (<span id="episodes"></span>)</a></li>
+        <li class="nav-link"><a href="#">About</a></li>
+        <li class="nav-link"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="grid" id="movies-grids">
+
+    </section>
+
+  <section>
+    <div class="comment-popup" id="comment-popup">
+      <div class="item-details">
+        <div class="item-header">
+          <div class="item-body">
+            <span id="item-image"><img src="https://static.tvmaze.com/uploads/images/original_untouched/1/4388.jpg" alt=""/></span>
+            <h2 id="item-name">Name</h2>
+            <div class="item-body-details">
+              <div class="item-body-first">
+                <p><b>Season:</b> <span id="item-season">1</span></p>
+                <p><b>Episode:</b> <span id="item-episode">1</span></p>
+              </div>
+              <div class="item-body-second">
+                <p><b>Runtime:</b> <span id="item-runtime">60</span></p>
+                <p><b>Rating:</b> <span id="item-rating">7.7</span></p>
+              </div>
+            </div>
+
+            <div class="comment-body">
+              <h3 class="comment-title">Comments (<span id="comment-total"></span>)</h3>
+              <div class="comment-list" id="comment-list">
+
+              </div>
+              <h3 class="comment-title">Add a comment</h3>
+              <form id="addForm" method="post">
+                <input type="text" id="user-name" placeholder="Your name" required>
+                <textarea id="user-comment" placeholder="Your insights" maxlength="500" required></textarea>
+                <button id="addButton" type="submit">Comment</button>
+              </form>
+            </div>
+          </div>
+          <a href="#" id="close-comment-popup">&times;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+
+  <footer>
+    <p>Created by Microverse under CC License</p>
+  </footer>
+
+</body>
+
+</html>
