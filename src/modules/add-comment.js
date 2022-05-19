@@ -1,4 +1,4 @@
-async function addComment(itemid, usrName, usrComment) {
+const addComment = async (itemid, usrName, usrComment) => {
   const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/wjqTUeCHluSF6iOLKc2j/comments';
 
   const myHeaders = new Headers();
@@ -21,6 +21,6 @@ async function addComment(itemid, usrName, usrComment) {
   const myCommentResult = await response.text();
 
   return myCommentResult;
-}
+};
 
 export default addComment;

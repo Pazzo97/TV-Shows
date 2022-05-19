@@ -1,4 +1,4 @@
-async function addLikes(itemid) {
+const addLikes = async (itemid) => {
   const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/wjqTUeCHluSF6iOLKc2j/likes';
 
   const myHeaders = new Headers();
@@ -19,6 +19,6 @@ async function addLikes(itemid) {
   const myLikeResult = await response.text();
 
   return myLikeResult;
-}
+};
 
 export default addLikes;

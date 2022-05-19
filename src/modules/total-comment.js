@@ -1,4 +1,4 @@
-async function totalComment(itemid) {
+const totalComment = async (itemid) => {
   const requestOptions = {
     method: 'GET',
     redirect: 'follow',
@@ -11,6 +11,6 @@ async function totalComment(itemid) {
   const commentListObj = JSON.parse(commentList);
 
   return commentListObj.length;
-}
+};
 
 export default totalComment;

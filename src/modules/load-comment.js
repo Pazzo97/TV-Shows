@@ -21,7 +21,7 @@ const populateComments = (obj) => {
   }
 };
 
-async function loadComment(itemid) {
+const loadComment = async (itemid) => {
   const requestOptions = {
     method: 'GET',
     redirect: 'follow',
@@ -34,6 +34,6 @@ async function loadComment(itemid) {
   const commentListObj = JSON.parse(commentList);
 
   populateComments(commentListObj);
-}
+};
 
 export default loadComment;
