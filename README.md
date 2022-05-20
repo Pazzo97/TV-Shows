@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-- The project is deployed with [GitHub pages](https://pazzo97.github.io/TV-Shows/dist).
+- The project is deployed with [GitHub pages](https://pazzo97.github.io/TV-Shows/).
 
 ## Video Presentation
 
@@ -61,7 +61,7 @@ To get a copyof this project you can follow these simple steps.
 
 - GitHub: [@Pazzo97](https://github.com/Pazzo97)
 - LinkedIn: [@LinkedIn](https://www.linkedin.com/in/patrick-mukunzi-8389861a9/)
-- Twitter: [@mukunzipat] (https://twitter.com/mukunzipat)
+- Twitter: [@mukunzipat](https://twitter.com/mukunzipat)
 
 👤 **Author 2**
 
